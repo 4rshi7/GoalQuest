@@ -1,7 +1,12 @@
-.hero-container .hero-wrapper {
-  max-width: unset;
-  padding: 0;
+ .hero-wrapper {
+   padding: calc(var(--spacing-xl) * 3) 0 var(--spacing-xl);
+    background-color: var(--background);
 }
+
+/* .fake-hero{
+   padding: calc(var(--spacing-xl) * 3) 0 var(--spacing-xl);
+    background-color: var(--background);
+} */
 
 .hero {
   /* position: relative; */
@@ -19,17 +24,22 @@
 }
 
 
-.hero h1 {
+.hero-text {
+    max-width: 500px;
+}
 
-   font-size: var(--font-4xl);
+.hero-text h1 {
+    font-size: var(--font-4xl);
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: var(--spacing-md);
     color: var(--text-primary);
-  /* max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color); */
+}
+
+.hero-text p {
+    font-size: var(--font-lg);
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-lg);
 }
 
 .hero picture {
