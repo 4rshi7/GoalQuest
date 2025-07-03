@@ -14,31 +14,32 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+     font-family: var(--ff);
 }
 
 :root {
     /* Colors */
-    --primary-light: #ffffff;
+    --primary-light: #fff;
     --secondary-light: #E2E8F0;
     --accent-1-light: #4B9CD3;
-    --accent-2-light: #FF3366;
-    --text-primary-light: #333333;
-    --text-secondary-light: #666666;
-    --background-light: #ffffff;
-    --nav-bg-light: #ffffff;
+    --accent-2-light: #F36;
+    --text-primary-light: #333;
+    --text-secondary-light: #666;
+    --background-light: #fff;
+    --nav-bg-light: #fff;
 
     /* Dark Theme Colors */
     --primary-dark: #1a1a1a;
     --secondary-dark: #2d2d2d;
     --accent-1-dark: #66B2FF;
     --accent-2-dark: #FF6B9A;
-    --text-primary-dark: #ffffff;
-    --text-secondary-dark: #cccccc;
+    --text-primary-dark: #fff;
+    --text-secondary-dark: #ccc;
     --background-dark: #121212;
     --nav-bg-dark: #1a1a1a;
 
     /* Font */
-    --ff: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --ff: 'Inter', -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, sans-serif;
     
     /* Font sizes */
     --font-xs: 0.75rem;
@@ -97,10 +98,6 @@ html, body {
 }
 
 /* Force Inter font on all elements */
-* {
-    font-family: var(--ff);
-}
-
 
 .container {
     max-width: 1200px;
@@ -109,7 +106,7 @@ html, body {
 }
 
 
-[data-theme="dark"] {
+/* [data-theme="dark"] {
     --primary: var(--primary-dark) ;
     --secondary: var(--secondary-dark);
     --accent-1: var(--accent-1-dark);
@@ -118,7 +115,7 @@ html, body {
     --text-secondary: var(--text-secondary-dark) ;
     --background: var(--background-dark) ;
     --nav-bg: var(--nav-bg-dark) ;
-}
+} */
 
 .section {
     /* max-width: 1200px;
@@ -127,9 +124,6 @@ html, body {
     /* padding: var(--spacing-md) 0; */
     /* background-color: var(--secondary); */
 }
-
-
-
 
 
 body {
