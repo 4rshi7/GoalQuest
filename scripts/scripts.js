@@ -22,11 +22,27 @@ function buildHeroBlock(main) {
   const picture = main.querySelector('picture');
   // eslint-disable-next-line no-bitwise
   if (h1 && picture && (h1.compareDocumentPosition(picture) & Node.DOCUMENT_POSITION_PRECEDING)) {
+    // console.log('Hero block found');
     const section = document.createElement('div');
     section.append(buildBlock('hero', { elems: [picture, h1] }));
     main.prepend(section);
   }
 }
+
+// function wrapperSection() {
+//   const container = document.querySelectorAll('.section');
+//   console.log(container);
+//   [...container].forEach((section) => {
+// // Create the wrapper div
+//     const wrapper = document.createElement('div');
+//     wrapper.className = 'section-wrapper';
+//       while (section.firstChild) {
+//       wrapper.appendChild(section.firstChild);
+// }
+// // Append the wrapper to the container
+// section.appendChild(wrapper);
+// })
+// }
 
 /**
  * load fonts.css and set a session storage flag
@@ -124,6 +140,12 @@ async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
   loadDelayed();
+//  wrapperSection();
 }
 
 loadPage();
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   // eslint-disable-next-line no-console
+//   wrapperSection();
+// });
