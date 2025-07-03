@@ -74,7 +74,9 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
   document.body.style.overflowY = (expanded || isDesktop.matches) ? '' : 'hidden';
   nav.setAttribute('aria-expanded', expanded ? 'false' : 'true');
   toggleAllNavSections(navSections, expanded || isDesktop.matches ? 'false' : 'true');
-  button.setAttribute('aria-label', expanded ? 'Open navigation' : 'Close navigation');
+
+  // commented out to avoid conflict with the hamburger button
+  // button.setAttribute('aria-label', expanded ? 'Open navigation' : 'Close navigation');
   // enable nav dropdown keyboard accessibility
   const navDrops = navSections.querySelectorAll('.nav-drop');
   if (isDesktop.matches) {
@@ -101,6 +103,17 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
     window.removeEventListener('keydown', closeOnEscape);
     nav.removeEventListener('focusout', closeOnFocusLost);
   }
+}
+
+function showSidebar() {
+    const sidebar = document.querySelector(".nav-tools");
+    sidebar.style.display = "flex";
+}
+
+// Close sidebar
+function closeSidebar() {
+    const sidebar = document.querySelector(".nav-tools");
+    sidebar.style.display = "none";
 }
 
 /**
@@ -153,7 +166,8 @@ export default async function decorate(block) {
       <span class="nav-hamburger-icon"></span>
     </button>`;
   hamburger.addEventListener('click', () => toggleMenu(nav, navSections));
-  nav.prepend(hamburger);
+  // commented out to avoid conflict with the hamburger button
+  // nav.prepend(hamburger);
   nav.setAttribute('aria-expanded', 'false');
   // prevent mobile nav behavior on window resize
   toggleMenu(nav, navSections, isDesktop.matches);
@@ -163,4 +177,19 @@ export default async function decorate(block) {
   navWrapper.className = 'nav-wrapper';
   navWrapper.append(nav);
   block.append(navWrapper);
+
+
+
+  const hamburg = block.querySelector('.nav-sections p');
+  const closer = block.querySelector('.nav-tools p');
+ 
+
+  hamburg.addEventListener('click', () => {
+    showSidebar();
+  });
+
+  closer.addEventListener('click', () => {
+    closeSidebar();
+  });
+  console.log(hamburg);
 }
