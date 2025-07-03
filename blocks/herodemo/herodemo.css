@@ -1,21 +1,26 @@
- .hero-wrapper {
+ /* .hero-wrapper {
    padding: calc(var(--spacing-xl) * 3) 0 var(--spacing-xl);
     background-color: var(--background);
-}
+} */
 
 /* .fake-hero{
    padding: calc(var(--spacing-xl) * 3) 0 var(--spacing-xl);
     background-color: var(--background);
 } */
+ .herodemo{
+   padding: calc(var(--spacing-xl) * 3) 0 var(--spacing-xl);
+   background-color: var(--background);
+ }
 
-.hero {
+
+
+.hero-wrapper {
   /* position: relative; */
   /* display: flex;
   align-items: center;
   gap: 24px;
   padding: 40px 24px;
   min-height: 300px; */
-
   display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-xl);
@@ -23,16 +28,22 @@
     min-height: 400px;
 }
 
+.hero-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm);
+}
 
-.hero-text {
-    max-width: 500px;
+
+.hero-text :last-of-type{
+    margin-bottom: var(--spacing-md);
 }
 
 .hero-text h1 {
     font-size: var(--font-4xl);
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: var(--spacing-md);
+    /* margin-bottom: var(--spacing-md); */
     color: var(--text-primary);
 }
 
@@ -42,24 +53,39 @@
     margin-bottom: var(--spacing-lg);
 }
 
-.hero picture {
-  /* position: absolute; */
+.cta-btn {
+    display: inline-block;
+    background: var(--accent-1);
+    color: white;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
 
+.cta-btn:hover {
+    transform: translateY(-2px);
+    background: var(--accent-2);
+}
+
+.hero-wrapper picture {
+  /* position: absolute; */
   inset: 0;
   object-fit: cover;
   box-sizing: border-box;
 }
 
-.hero img {
+.hero-wrapper img {
    width: 100%;
     height: 360px;
     object-fit: cover;
     border-radius: var(--radius-md);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-@media (width >= 900px) {
+/* @media (width >= 900px) {
   .hero {
     padding: 40px 32px;
   }
-}
+} */
