@@ -43,7 +43,9 @@ nav {
     color: var(--text-primary);
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s ease;
+
+    /* transition: color 0.3s ease; */
+
     display: flex;
     align-items: center;
     height: 100%;
@@ -109,9 +111,9 @@ nav {
     transition: background-color 0.2s ease;
 } */
 
-.nav-tools li:hover {
+/* .nav-tools li:hover {
     background-color: var(--secondary);
-}
+} */
 
 .nav-tools p {
     position: absolute;
