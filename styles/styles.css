@@ -121,7 +121,9 @@ html, body {
     /* max-width: 1200px;
     margin: 0 auto;
     padding: 0 var(--spacing-sm); */
+
     /* padding: var(--spacing-md) 0; */
+
     /* background-color: var(--secondary); */
 }
 
@@ -213,6 +215,7 @@ button {
 } */
 
 /* links */
+
 /* a:any-link {
   color: var(--link-color);
   text-decoration: none;
@@ -225,6 +228,7 @@ a:hover {
 } */
 
 /* buttons */
+
 /* a.button:any-link,
 button {
   box-sizing: border-box;
@@ -287,6 +291,7 @@ button.secondary {
 } */
 
 /* sections */
+
 /* main > .section {
   margin: 40px 0;
 } */
@@ -308,6 +313,7 @@ button.secondary {
 } */
 
 /* section metadata */
+
 /* main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
