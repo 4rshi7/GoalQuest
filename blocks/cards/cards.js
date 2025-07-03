@@ -1,23 +1,25 @@
 /* eslint-disable padded-blocks */
+
 /* eslint-disable max-len */
+
 /* eslint-disable no-console */
-import { createOptimizedPicture } from '../../scripts/aem.js';
+// import { createOptimizedPicture } from '../../scripts/aem.js'; maybe use this later
 
 export default function decorate(block) {
 // const container = document.querySelector('.cards-container');
 
-// // 
- 
-// // Create the wrapper div
-// const wrapper = document.createElement('div');
-// wrapper.className = 'wrapper';
- 
-// // Move the first and second children into the wrapper
-// while (container.firstChild) {
-//   wrapper.appendChild(container.firstChild);
-// }
-// // Append the wrapper to the container
-// container.appendChild(wrapper);
+  // //
+
+  // // Create the wrapper div
+  // const wrapper = document.createElement('div');
+  // wrapper.className = 'wrapper';
+
+  // // Move the first and second children into the wrapper
+  // while (container.firstChild) {
+  //   wrapper.appendChild(container.firstChild);
+  // }
+  // // Append the wrapper to the container
+  // container.appendChild(wrapper);
   // block.classList.add('container');
   [...block.children].forEach((child) => {
     // console.log(child);

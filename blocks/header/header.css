@@ -4,7 +4,7 @@
     left: 0;
     right: 0;
     background-color: var(--nav-bg);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 10px rgb(0 0 0 / 20%);
     z-index: 1000;
     transition: background-color 0.3s ease;
     height: 70px;
@@ -19,8 +19,8 @@ nav{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 0 var(--spacing-sm);
     height: 100%;
+
     /* max-width: 1200px;
     margin: 0 auto;
     padding: 0 var(--spacing-sm); */ 
@@ -90,7 +90,7 @@ nav{
     width: 250px;
     background-color: var(--primary);
     padding: var(--spacing-xl) var(--spacing-lg);
-    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: -5px 0 15px rgb(0 0 0 / 10%);
     z-index: 1001;
     flex-direction: column;
     gap: var(--spacing-md);
@@ -101,7 +101,6 @@ nav{
 }
 
 .nav-tools li{
-   
     color: var(--text-primary);
     text-decoration: none;
     font-size: var(--font-lg);
@@ -109,6 +108,7 @@ nav{
     border-radius: var(--radius-sm);
     transition: background-color 0.2s ease;
 }
+
 .nav-tools li:hover{
     background-color: var(--secondary);
 }
@@ -124,13 +124,14 @@ nav{
     cursor: pointer;
     padding: var(--spacing-xs);
 }
+
 .nav-tools p:hover {
     background-color: var(--secondary);
     color: var(--accent-1);
 }
 
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
      .nav-sections ul {
         display: none; /* Hide the menu items on small screens */
     }   

@@ -69,8 +69,8 @@ function toggleAllNavSections(sections, expanded = false) {
  * @param {*} forceExpanded Optional param to force nav expand behavior when not null
  */
 function toggleMenu(nav, navSections, forceExpanded = null) {
-  const expanded = forceExpanded !== null ? !forceExpanded : nav.getAttribute('aria-expanded') === 'true';
-  const button = nav.querySelector('.nav-hamburger button');
+  const expanded = forceExpanded !== null ? !forceExpanded : nav.getAttribute('aria-expanded') === 'true';expandedforceExpandednull!forceExpanded
+  // const button = nav.querySelector('.nav-hamburger button');
   document.body.style.overflowY = (expanded || isDesktop.matches) ? '' : 'hidden';
   nav.setAttribute('aria-expanded', expanded ? 'false' : 'true');
   toggleAllNavSections(navSections, expanded || isDesktop.matches ? 'false' : 'true');
@@ -86,7 +86,9 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
         drop.addEventListener('focus', focusNavSection);
       }
     });
-  } else {
+  }
+
+ else {
     navDrops.forEach((drop) => {
       drop.removeAttribute('tabindex');
       drop.removeEventListener('focus', focusNavSection);
@@ -99,21 +101,23 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
     window.addEventListener('keydown', closeOnEscape);
     // collapse menu on focus lost
     nav.addEventListener('focusout', closeOnFocusLost);
-  } else {
+  }
+
+ else {
     window.removeEventListener('keydown', closeOnEscape);
     nav.removeEventListener('focusout', closeOnFocusLost);
   }
 }
 
 function showSidebar() {
-    const sidebar = document.querySelector(".nav-tools");
-    sidebar.style.display = "flex";
+  const sidebar = document.querySelector('.nav-tools');
+  sidebar.style.display = 'flex';
 }
 
 // Close sidebar
 function closeSidebar() {
-    const sidebar = document.querySelector(".nav-tools");
-    sidebar.style.display = "none";
+  const sidebar = document.querySelector('.nav-tools');
+  sidebar.style.display = 'none';
 }
 
 /**
@@ -123,7 +127,7 @@ function closeSidebar() {
 export default async function decorate(block) {
   // load nav as fragment
   const navMeta = getMetadata('nav');
-  const navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
+  const navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';navPathnavMetanewURL.pathname
   const fragment = await loadFragment(navPath);
 
   // decorate nav DOM
@@ -178,11 +182,8 @@ export default async function decorate(block) {
   navWrapper.append(nav);
   block.append(navWrapper);
 
-
-
   const hamburg = block.querySelector('.nav-sections p');
   const closer = block.querySelector('.nav-tools p');
- 
 
   hamburg.addEventListener('click', () => {
     showSidebar();
