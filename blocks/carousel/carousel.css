@@ -50,7 +50,6 @@
         var(--secondary) 100%
     );
     backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
 }
 
 .slide-image {
