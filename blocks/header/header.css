@@ -1,5 +1,5 @@
-.nav-wrapper{
-   position: fixed;
+.nav-wrapper {
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -14,7 +14,7 @@
     font-family: var(--ff);
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,13 +23,13 @@ nav{
 
     /* max-width: 1200px;
     margin: 0 auto;
-    padding: 0 var(--spacing-sm); */ 
-     max-width: 1200px;
+    padding: 0 var(--spacing-sm); */
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 var(--spacing-sm);
 }
 
-.nav-sections ul{
+.nav-sections ul {
     list-style: none;
     display: flex;
     gap: var(--spacing-md);
@@ -39,8 +39,8 @@ nav{
     height: 100%;
 }
 
-.nav-sections li{
-   color: var(--text-primary);
+.nav-sections li {
+    color: var(--text-primary);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
@@ -52,12 +52,12 @@ nav{
     height: 100%;
 }
 
-.nav-sections li:hover{
+.nav-sections li:hover {
     color: var(--accent-1);
     text-decoration: none;
 }
 
-.nav-sections p{
+.nav-sections p {
     display: none;
     background: none;
     border: none;
@@ -65,12 +65,10 @@ nav{
     font-size: var(--font-xl);
     cursor: pointer;
     padding: 0.5rem;
-    transition: transform 0.3s
+    transition: transform 0.3s;
 }
 
-
-
-.nav-brand a{
+.nav-brand a {
     font-size: var(--font-xl);
     font-weight: 700;
     color: var(--accent-1);
@@ -81,8 +79,8 @@ nav{
     line-height: 1.2;
 }
 
-.nav-tools{
-     display: none;
+.nav-tools {
+    display: none;
     position: fixed;
     top: 0;
     right: 0;
@@ -96,11 +94,11 @@ nav{
     gap: var(--spacing-md);
 }
 
-.nav-tools ul{
-    list-style : none;
+.nav-tools ul {
+    list-style: none;
 }
 
-.nav-tools li{
+.nav-tools li {
     color: var(--text-primary);
     text-decoration: none;
     font-size: var(--font-lg);
@@ -109,12 +107,12 @@ nav{
     transition: background-color 0.2s ease;
 }
 
-.nav-tools li:hover{
+.nav-tools li:hover {
     background-color: var(--secondary);
 }
 
 .nav-tools p {
-     position: absolute;
+    position: absolute;
     top: var(--spacing-sm);
     right: var(--spacing-sm);
     background: none;
@@ -130,24 +128,21 @@ nav{
     color: var(--accent-1);
 }
 
-
 @media (width <= 768px) {
-     .nav-sections ul {
+    .nav-sections ul {
         display: none; /* Hide the menu items on small screens */
-    }   
-    
+    }
+
     .nav-brand a {
         font-size: var(--font-lg);
     }
-    
+
     .nav-sections p {
-         display: flex ;
+        display: flex;
         align-items: center;
-        justify-content: center ; /* Show the hamburger icon */
+        justify-content: center; /* Show the hamburger icon */
     }
 
-
     .menu-toggle {
-       
     }
 }

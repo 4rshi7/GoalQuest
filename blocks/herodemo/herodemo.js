@@ -3,11 +3,11 @@
 /* eslint-disable no-console */
 export default async function decorate(block) {
   console.log(block);
-  block.children[0].classList.add('hero-wrapper');
-  const blockChild = block.querySelector('.hero-wrapper');
-  blockChild.children[0].classList.add('hero-text');
-  const cta = block.querySelector('.button-container');
-  cta.children[0].classList.add('cta-btn');
+  block.children[0].classList.add("hero-wrapper");
+  const blockChild = block.querySelector(".hero-wrapper");
+  blockChild.children[0].classList.add("hero-text");
+  const cta = block.querySelector(".button-container");
+  cta.children[0].classList.add("cta-btn");
 
   // block.classList.add('container');
   // block.children[0].classList.add('hero-text');
@@ -22,5 +22,5 @@ export default async function decorate(block) {
   // console.log(cta);
   // cta.classList.add('hero-cta');
   // const button = document.querySelector('hero-text');
-//   console.log(button);
+  //   console.log(button);
 }

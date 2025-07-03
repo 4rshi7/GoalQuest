@@ -44,9 +44,13 @@
     padding: var(--spacing-lg);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
-    background: radial-gradient(circle at 18% 50%, var(--accent-1) 0%, var(--secondary) 100%);
+    background: radial-gradient(
+        circle at 18% 50%,
+        var(--accent-1) 0%,
+        var(--secondary) 100%
+    );
     backdrop-filter: blur(10px);
-     backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
 .slide-image {
@@ -102,7 +106,7 @@
     box-shadow: var(--shadow-md);
 }
 
-.carousel-button:active{
+.carousel-button:active {
     outline: 2px solid var(--accent-2);
 }
 

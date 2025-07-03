@@ -1,28 +1,28 @@
 footer {
-  background-color: var(--secondary);
-    padding: var(--spacing-xl) 0 calc(var(--spacing-xl) ) 0;
+    background-color: var(--secondary);
+    padding: var(--spacing-xl) 0 calc(var(--spacing-xl)) 0;
     margin-top: auto;
 }
 
-.footer{
+.footer {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 var(--spacing-sm);
 }
 
-.footer > div{
-  display: flex;
+.footer > div {
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: var(--spacing-sm);
 }
 
-.footer h3{
-  color: var(--text-primary);
+.footer h3 {
+    color: var(--text-primary);
     margin-bottom: var(--spacing-md);
 }
 
-.footer .section a{
+.footer .section a {
     display: block;
     color: var(--text-secondary);
     text-decoration: none;
@@ -31,32 +31,30 @@ footer {
 }
 
 .footer .section a:hover {
-  color: var(--accent-1);
+    color: var(--accent-1);
 }
 
-.footer ul{
-  list-style: none;
-  padding:  0;
-  margin: var(--spacing-xs) 0;
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: var(--spacing-xs) 0;
 }
 
 .footer ul li {
-  margin-bottom: var(--spacing-xs);
+    margin-bottom: var(--spacing-xs);
 }
 
 /* responsiveness for footer */
 @media (width <= 500px) {
-    .footer > div{
+    .footer > div {
         flex-direction: column;
         gap: var(--spacing-md);
     }
 
-    .footer > div > div{
+    .footer > div > div {
         flex: 1 1 100%;
     }
-  }
-
-
+}
 
 /* .footer {
     background-color: var(--secondary);
@@ -125,8 +123,6 @@ footer {
         flex: 1 1 100%;
     }
 } */
-
-
 
 /* footer .footer > div {
   margin: auto;
