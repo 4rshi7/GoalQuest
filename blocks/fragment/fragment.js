@@ -14,10 +14,10 @@ import { loadSections } from '../../scripts/aem.js';
  * @returns {HTMLElement} The root element of the fragment
  */
 export async function loadFragment(path) {
-  if (path && path.startsWith('/')) {
+  if (path && path.startsWith("/")) {
     const resp = await fetch(`${path}.plain.html`);
     if (resp.ok) {
-      const main = document.createElement('main');
+      const main = document.createElement("main");
       main.innerHTML = await resp.text();
 
       // reset base path for media to fragment base
@@ -29,8 +29,8 @@ export async function loadFragment(path) {
           ).href;
         });
       };
-      resetAttributeBase('img', 'src');
-      resetAttributeBase('source', 'srcset');
+      resetAttributeBase("img", "src");
+      resetAttributeBase("source", "srcset");
 
       decorateMain(main);
       await loadSections(main);
@@ -46,10 +46,10 @@ export default async function decorate(block) {
   // pathlinklink.getAttribute;
   const fragment = await loadFragment(path);
   if (fragment) {
-    const fragmentSection = fragment.querySelector(':scope .section');
+    const fragmentSection = fragment.querySelector(":scope .section");
     if (fragmentSection) {
-      block.closest('.section').classList.add(...fragmentSection.classList);
-      block.closest('.fragment').replaceWith(...fragment.childNodes);
+      block.closest(".section").classList.add(...fragmentSection.classList);
+      block.closest(".fragment").replaceWith(...fragment.childNodes);
     }
   }
 }
