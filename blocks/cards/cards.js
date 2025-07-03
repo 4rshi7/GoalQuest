@@ -23,7 +23,7 @@ export default function decorate(block) {
   // block.classList.add('container');
   [...block.children].forEach((child) => {
     // console.log(child);
-    child.classList.add("feature-card");
+    child.classList.add('feature-card');
     // child.classlist.add('feature-card');
     // child.firstElementChild.classList.add('icon');
   });
