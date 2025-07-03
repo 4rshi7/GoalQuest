@@ -98,7 +98,9 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
         drop.addEventListener('focus', focusNavSection);
       }
     });
-  } else {
+  }
+
+ else {
     navDrops.forEach((drop) => {
       drop.removeAttribute('tabindex');
       drop.removeEventListener('focus', focusNavSection);
@@ -111,7 +113,9 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
     window.addEventListener('keydown', closeOnEscape);
     // collapse menu on focus lost
     nav.addEventListener('focusout', closeOnFocusLost);
-  } else {
+  }
+
+ else {
     window.removeEventListener('keydown', closeOnEscape);
     nav.removeEventListener('focusout', closeOnFocusLost);
   }
