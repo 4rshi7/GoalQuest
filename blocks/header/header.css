@@ -44,17 +44,19 @@ nav {
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
-    font-size: var(--font-base);
-    padding: 0.5rem 0.75rem;
-    font-family: var(--ff);
     display: flex;
     align-items: center;
     height: 100%;
+    font-size: var(--font-lg);
+    padding: var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    transition: background-color 0.2s ease;
 }
 
 .nav-sections li:hover {
     color: var(--accent-1);
     text-decoration: none;
+    background-color: var(--secondary);
 }
 
 .nav-sections p {
@@ -98,14 +100,14 @@ nav {
     list-style: none;
 }
 
-.nav-tools li {
+/* .nav-tools li {
     color: var(--text-primary);
     text-decoration: none;
     font-size: var(--font-lg);
     padding: var(--spacing-sm);
     border-radius: var(--radius-sm);
     transition: background-color 0.2s ease;
-}
+} */
 
 .nav-tools li:hover {
     background-color: var(--secondary);
