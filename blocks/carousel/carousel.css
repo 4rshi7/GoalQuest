@@ -19,10 +19,6 @@
     margin: 0;
     padding: 0;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> a333d43 (minor cosmetic changes)
 .slide {
     position: absolute;
     inset: 0;
@@ -42,7 +38,6 @@
     gap: 2rem;
     height: 100%;
     align-items: center;
-<<<<<<< HEAD
 
     /* background: var(--primary); */
     padding: var(--spacing-lg);
@@ -54,30 +49,6 @@
         var(--secondary) 100%
     );
     backdrop-filter: blur(10px);
-=======
-    background: var(--primary);
-    padding: var(--spacing-lg);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
-    background: radial-gradient(
-        circle at 18% 50%,
-        var(--accent-1) 0%,
-        var(--secondary) 100%
-    );
-    backdrop-filter: blur(10px);
-=======
-    background: var(--primary);
-    padding: var(--spacing-lg);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
-    background: radial-gradient(
-        circle at 18% 50%,
-        var(--accent-1) 0%,
-        var(--secondary) 100%
-    );
-    backdrop-filter: blur(10px);
-     -webkit-backdrop-filter: blur(10px);
->>>>>>> a333d43 (minor cosmetic changes)
     backdrop-filter: blur(10px);
 }
 
@@ -132,16 +103,9 @@
     background: var(--accent-1);
     color: white;
     box-shadow: var(--shadow-md);
-<<<<<<< HEAD
 }
 
 .carousel-button:active {
-=======
-    
-}
-
-.carousel-button:active{
->>>>>>> a333d43 (minor cosmetic changes)
     outline: 2px solid var(--accent-2);
 }
 
