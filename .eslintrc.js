@@ -1,4 +1,4 @@
-module.exports = {
+gmodule.exports = {
   root: true,
   extends: 'airbnb-base',
   env: {
