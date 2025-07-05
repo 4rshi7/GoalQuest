@@ -1,0 +1,107 @@
+ .modal {
+            display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0 0 0 / 50%);
+        z-index: 1000;
+        
+        }
+
+   .modal.show {  /* Add this class when showing the modal */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;  
+            justify-content: space-around;
+
+              /* Add top padding */
+            gap: var(--spacing-lg);
+            padding: var(--spacing-sm) 0;
+        }
+
+         .topics-list-wrapper > div{
+        width: 100%;
+        display: flex;
+    flex-direction: column;
+
+    /* gap: var(--spacing-sm); */
+     overflow: hidden auto;
+    }
+
+    .modal > div:first-of-type {
+    background-color: var(--primary);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    margin: 0 auto;  
+    position: relative;
+    box-shadow: 0 10px 25px rgb(0 0 0 / 20%);
+    display: flex;
+    flex-direction: column;
+    top: var(--spacing-sm);
+}
+
+
+
+    .modal > div:last-of-type{
+        position: relative;
+        bottom: var(--spacing-md);
+        margin: 0 auto;
+        pad: var(--spacing-md);
+
+        /* margin-top: var(--spacing-lg); */
+        padding: var(--spacing-sm) var(--spacing-lg);
+        background-color: var(--accent-1);
+        color: white;
+        border: none;
+        border-radius: var(--radius-md);
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+    }
+
+     .modal > div:last-of-type:hover{
+        background-color: var(--accent-2);
+     }
+
+
+   
+
+   
+
+    .topic-item {
+    background: rgb(255 255 255 / 5%);
+    border-radius: var(--radius-sm);
+    padding: var(--spacing-sm);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.topic-item:hover {
+    background: rgb(255 255 255 / 10%);
+    transform: translateX(5px);
+}
+
+.topic-item input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: var(--accent-1);
+}
+
+.topic-item label {
+    cursor: pointer;
+    color: var(--text-primary);
+    flex: 1;
+}
+
+
+
+
+
