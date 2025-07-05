@@ -1,0 +1,68 @@
+#your-learning-journey{
+     padding-top: calc(var(--spacing-xl) * 2);
+     text-align: center;
+     margin-bottom: var(--spacing-xl);
+    color: var(--text-primary);
+}
+ 
+ .weeks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+            padding: var(--spacing-lg);
+        }
+        
+ .progress-card {
+           background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-lg);
+            box-shadow: 0 4px 6px rgb(0 0 0 / 10%);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+
+            /* justify-content: space-between; */
+        }
+
+        .progress-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgb(0 0 0 / 15%);
+        }
+
+        .progress-card h2 {
+    font-size: var(--font-xl);
+    margin-bottom: var(--spacing-md);
+    color: var(--text-primary);
+    flex: 0 0 auto;
+}
+
+        .progress-info {
+           display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    justify-content: flex-start;
+    margin-top: auto;
+        }
+
+        .radial-progress {
+            width: 60px;
+            height: 60px;
+            transform: rotate(-90deg);
+        }
+
+        .radial-progress path {
+        stroke-linecap: round;
+        transition: stroke-dasharray 0.3s ease;
+        stroke: var(--accent-1);
+        stroke-width: 2;
+
+        }
+
+        .progress-info p{
+            display: inline;
+             font-size: var(--font-lg);
+            font-weight: 600;
+            color: var(--accent-1);
+        }
