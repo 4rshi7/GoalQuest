@@ -206,5 +206,5 @@ export default async function decorate(block) {
   closer.addEventListener('click', () => {
     closeSidebar();
   });
-  console.log(hamburg);
+  // console.log(hamburg);
 }
