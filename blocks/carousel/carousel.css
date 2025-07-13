@@ -116,3 +116,11 @@
 .carousel-button.next {
     right: 1rem;
 }
+
+@media (width <= 768px) {
+   .slide-content {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+

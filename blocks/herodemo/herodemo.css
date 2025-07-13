@@ -93,4 +93,18 @@
     padding: 40px 32px;
   }
 } */
+
+@media (width <= 768px) {
+   .hero-wrapper{
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+        min-height: auto;
+        text-align: center;
+   }
+
+   .hero-wrapper img{
+    height: 300px;
+        order: 2;
+   }
+}
  

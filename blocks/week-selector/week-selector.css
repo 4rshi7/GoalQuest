@@ -1,0 +1,54 @@
+.week-selector-container{
+      padding: calc(var(--spacing-xl) * 2) 0 var(--spacing-xl);
+    text-align: center;
+    background-color: var(--background);
+}
+
+.week-selector-container h1{
+     font-size: var(--font-3xl);
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-primary);
+}
+
+.week-selector-container .default-content-wrapper p {
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-lg);
+}
+
+.week-selector > div {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.week-btn {
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background-color: var(--primary);
+    border: 2px solid var(--accent-1);
+    border-radius: var(--radius-md);
+    color: var(--text-primary);
+    font-size: var(--font-base);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.week-btn:hover {
+    background-color: var(--accent-2);
+}
+
+.week-btn.active {
+    background-color: var(--accent-1);
+    color: white;
+}
+
+@media (width <= 768px) {
+    .week-selector > div {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .week-selector> div > div{
+        margin: 0 var(--spacing-md);
+    }
+}
