@@ -2,7 +2,7 @@ import { showModal } from '../modals/modals.js';
 
 // Week-wise topics data
 const weekTopics = {
- week1: [
+  week1: [
     { id: 'w1t1', name: 'Introduction to web development', completed: false },
     { id: 'w1t2', name: 'Components of web development', completed: false },
     { id: 'w1t3', name: 'Introduction to web tools', completed: false },
