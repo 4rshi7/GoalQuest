@@ -76,7 +76,7 @@ export default function decorate(block) {
     });
     iter += 1;
   });
-  ['week1', 'week2', 'week3', 'week4'].forEach((weekId) => {
+  ['week1', 'week2', 'week3', 'week4', 'week5'].forEach((weekId) => {
     const topics = JSON.parse(localStorage.getItem('weekTopics'))[weekId];
     const topicsList = document.querySelector(`#${weekId}modal`).children[0];
     // console.log(topicsList);

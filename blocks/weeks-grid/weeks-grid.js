@@ -72,6 +72,101 @@ const weekTopics = {
     { id: 'w4t11', name: 'Drag and Drop', completed: false },
     { id: 'w4t12', name: 'History and Clipboard', completed: false },
   ],
+  week5: [
+    // Day 1: EDS Setup and Getting Started
+    { id: 'w5t1', name: 'System setup with basic tools', completed: false },
+    { id: 'w5t2', name: 'Get familiar with IDE - VS Code', completed: false },
+    { id: 'w5t3', name: 'Get familiar with tools like Maven, Git', completed: false },
+    { id: 'w5t4', name: 'Build basic website with EDS', completed: false },
+    { id: 'w5t5', name: 'Boilerplate code', completed: false },
+    { id: 'w5t6', name: 'EDS Bot setup', completed: false },
+    { id: 'w5t7', name: 'Content Folder setup (google drive)', completed: false },
+    { id: 'w5t8', name: 'EDS sidekick setup', completed: false },
+    { id: 'w5t9', name: 'Preview and publish content', completed: false },
+    { id: 'w5t10', name: 'Changing content and reflect on preview/live site', completed: false },
+    { id: 'w5t11', name: 'Changing styling, test locally and deploy to preview/publish', completed: false },
+
+    // Day 2: EDS Developer Fundamentals
+    { id: 'w5t12', name: 'Exploring the structure of an EDS project', completed: false },
+    { id: 'w5t13', name: 'Structure of EDS document', completed: false },
+    { id: 'w5t14', name: 'Markup', completed: false },
+    { id: 'w5t15', name: 'Blocks', completed: false },
+    { id: 'w5t16', name: 'Auto-Blocks', completed: false },
+    { id: 'w5t17', name: 'Understanding the architecture of EDS (under the hoods)', completed: false },
+    { id: 'w5t18', name: 'Building a custom Block', completed: false },
+    { id: 'w5t19', name: 'Web Performance', completed: false },
+    { id: 'w5t20', name: 'Google Page Speed Insights', completed: false },
+    { id: 'w5t21', name: '100 score with Franklin', completed: false },
+    { id: 'w5t22', name: 'EDS Admin API', completed: false },
+
+    // Day 3: Authoring and Publishing Content with EDS
+    { id: 'w5t23', name: 'Authoring content: Text Content', completed: false },
+    { id: 'w5t24', name: 'Authoring content: Images', completed: false },
+    { id: 'w5t25', name: 'Authoring content: Videos', completed: false },
+    { id: 'w5t26', name: 'Authoring content: Links', completed: false },
+    { id: 'w5t27', name: 'Authoring content: Sections', completed: false },
+    { id: 'w5t28', name: 'Authoring content: Blocks', completed: false },
+    { id: 'w5t29', name: 'Preview and publish content (Day 3)', completed: false },
+    { id: 'w5t30', name: 'Delete content', completed: false },
+    { id: 'w5t31', name: 'Redirects', completed: false },
+    { id: 'w5t32', name: 'Placeholders', completed: false },
+    { id: 'w5t33', name: 'Metadata on content', completed: false },
+    { id: 'w5t34', name: 'Bulk Metadata', completed: false },
+
+    // Day 4: Understanding Blocks
+    { id: 'w5t35', name: 'Understand the Boilerplate EDS Blocks: Headings', completed: false },
+    { id: 'w5t36', name: 'Understand the Boilerplate EDS Blocks: Text', completed: false },
+    { id: 'w5t37', name: 'Understand the Boilerplate EDS Blocks: Images', completed: false },
+    { id: 'w5t38', name: 'Understand the Boilerplate EDS Blocks: Lists', completed: false },
+    { id: 'w5t39', name: 'Understand the Boilerplate EDS Blocks: Links', completed: false },
+    { id: 'w5t40', name: 'Understand the Boilerplate EDS Blocks: Buttons', completed: false },
+    { id: 'w5t41', name: 'Understand the Boilerplate EDS Blocks: Code', completed: false },
+    { id: 'w5t42', name: 'Understand the Boilerplate EDS Blocks: Sections', completed: false },
+    { id: 'w5t43', name: 'Understand the Boilerplate EDS Blocks: Icons', completed: false },
+    { id: 'w5t44', name: 'Understand the Boilerplate EDS Blocks: Hero', completed: false },
+    { id: 'w5t45', name: 'Understand the Boilerplate EDS Blocks: Columns', completed: false },
+    { id: 'w5t46', name: 'Understand the Boilerplate EDS Blocks: Cards', completed: false },
+    { id: 'w5t47', name: 'Understand the Boilerplate EDS Blocks: Header', completed: false },
+    { id: 'w5t48', name: 'Understand the Boilerplate EDS Blocks: Footer', completed: false },
+    { id: 'w5t49', name: 'Understand the Boilerplate EDS Blocks: Metadata', completed: false },
+    { id: 'w5t50', name: 'Understand the Boilerplate EDS Blocks: Section Metadata', completed: false },
+    { id: 'w5t51', name: 'Understand the Additional Blocks: Embed', completed: false },
+    { id: 'w5t52', name: 'Understand the Additional Blocks: Fragment', completed: false },
+    { id: 'w5t53', name: 'Explore Block Party', completed: false },
+
+    // Day 5: Spreadsheets, Indexing and SEO
+    { id: 'w5t54', name: 'Understand the usage of Spreadsheets with EDS: Exporting data in spreadsheet as JSON', completed: false },
+    { id: 'w5t55', name: 'Understand the usage of Spreadsheets with EDS: Creating structured content and consuming in website', completed: false },
+    { id: 'w5t56', name: 'Understand how to manage index of all published pages: Setting Up an Initial Query Index', completed: false },
+    { id: 'w5t57', name: 'Understand how to manage index of all published pages: Setting Up Properties to be Added to the Index', completed: false },
+    { id: 'w5t58', name: 'Understand how to manage index of all published pages: Activate Your Index', completed: false },
+    { id: 'w5t59', name: 'Understand how to manage index of all published pages: Checking Your Index', completed: false },
+    { id: 'w5t60', name: 'Understand how to manage index of all published pages: Debugging Your Index Configuration', completed: false },
+    { id: 'w5t61', name: 'Understand how to manage index of all published pages: Setting Up More Index Configurations', completed: false },
+    { id: 'w5t62', name: 'Understand how to manage SEO aspects: Sitemap', completed: false },
+    { id: 'w5t63', name: 'Understand how to manage SEO aspects: .hlxignore', completed: false },
+    { id: 'w5t64', name: 'Understand how to manage SEO aspects: Robots.txt', completed: false },
+
+    // Day 6: Crosswalk Overview, Architecture, Universal Editor
+    { id: 'w5t65', name: 'Overview of Edge delivery services with AEM authoring', completed: false },
+    { id: 'w5t66', name: 'Recorded session – AEM authoring with EDS', completed: false },
+    { id: 'w5t67', name: 'Understanding Universal Editor', completed: false },
+
+    // Day 7: Crosswalk Dev set up
+    { id: 'w5t68', name: 'Setup EDS demo site with AEM Based authoring (Universal editor)', completed: false },
+    { id: 'w5t69', name: 'Understanding paths.json', completed: false },
+
+    // Day 8: Crosswalk Blocks
+    { id: 'w5t70', name: 'Understanding block models: Component Definition', completed: false },
+    { id: 'w5t71', name: 'Understanding block models: Component Filters', completed: false },
+    { id: 'w5t72', name: 'Understanding block models: Component Models', completed: false },
+    { id: 'w5t73', name: 'Understand models, fields and component types', completed: false },
+    { id: 'w5t74', name: 'Understanding Spreadsheets (Crosswalk Blocks): Placeholders sheet', completed: false },
+    { id: 'w5t75', name: 'Understanding Spreadsheets (Crosswalk Blocks): Bulk Metadata sheet', completed: false },
+    { id: 'w5t76', name: 'Understanding Spreadsheets (Crosswalk Blocks): Redirects sheet', completed: false },
+    { id: 'w5t77', name: 'Understanding Spreadsheets (Crosswalk Blocks): Headers sheet', completed: false },
+    { id: 'w5t78', name: 'Understanding Taxonomy', completed: false },
+  ],
 };
 
 // Initialize the topics in localStorage if not present
@@ -108,6 +203,6 @@ export default function decorate(block) {
       event.target.classList.remove('show');
     }
   };
-
+  console.log(weekTopics);
   initializeTopics();
 }

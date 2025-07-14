@@ -37,6 +37,7 @@ function updateTaskProgress(weekId, taskId, checkbox) {
       window.dispatchEvent(event);
 
       // Reload tasks to update the display
+      // eslint-disable-next-line no-use-before-define
       loadWeekTasks(weekId[weekId.length - 1] - 1);
     }
   }, 500); // Match this with the CSS animation duration
@@ -44,9 +45,10 @@ function updateTaskProgress(weekId, taskId, checkbox) {
 
 function loadWeekTasks(weekId) {
   const storedData = JSON.parse(localStorage.getItem('weekTopics'));
-
+  console.log(storedData);
   const parsedWeekId = parseInt(weekId, 10) + 1;
   const w = `week${parsedWeekId}`;
+  console.log(w);
   if (!storedData || !storedData[w]) {
     console.log('you are here');
     showNoTasksMessage();
