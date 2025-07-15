@@ -19,7 +19,7 @@ export default async function decorate(block) {
     : '/footer';
   // footerPathfooterMetanewURL.pathname;
   const fragment = await loadFragment(footerPath);
-  
+
   // decorate footer DOM
   block.textContent = '';
   const footer = document.createElement('div');
