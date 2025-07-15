@@ -171,10 +171,6 @@ button[type="submit"]:hover {
     .newsletter{
       padding : 0;
 
-      @media screen {
-        ma
-      }
-
       /* border: none; */
       box-shadow: none;
 
