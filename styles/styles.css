@@ -24,7 +24,7 @@
     --primary-light: #fff;
     --secondary-light: #E2E8F0;
     --accent-1-light: #1b7cbd;
-    --accent-2-light: #F36;
+    --accent-2-light: #8e44ad;
     --text-primary-light: #333;
     --text-secondary-light: #666;
     --background-light: #fff;
@@ -34,7 +34,7 @@
     --primary-dark: #1a1a1a;
     --secondary-dark: #2d2d2d;
     --accent-1-dark: #66B2FF;
-    --accent-2-dark: #FF6B9A;
+    --accent-2-dark: #c084d2;
     --text-primary-dark: #fff;
     --text-secondary-dark: #ccc;
     --background-dark: #121212;
@@ -135,7 +135,7 @@ a{
 }
 
 a:hover {
-  color: var(--accent-1);
+  /* color: var(--accent-1); */
   transition: color 0.2s ease;
 }
 

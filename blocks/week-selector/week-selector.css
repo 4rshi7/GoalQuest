@@ -35,6 +35,7 @@
 
 .week-btn:hover {
     background-color: var(--accent-2);
+    color: #fff;
 }
 
 .week-btn.active {
