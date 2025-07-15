@@ -176,6 +176,7 @@ function toggleSession() {
   if (session === 'true') {
     const weekTopics = JSON.parse(localStorage.getItem('weekTopics'));
     ['week1', 'week2', 'week3', 'week4', 'week5'].forEach((week) => {
+      console.log(weekTopics[week]);
       weekTopics[week].forEach((task) => {
       // console.log(task);
       // console.log(task.completed);
