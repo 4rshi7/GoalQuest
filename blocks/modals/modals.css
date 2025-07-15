@@ -24,6 +24,7 @@
          .topics-list-wrapper > div{
         width: 100%;
         display: flex;
+        margin-top: var(--spacing-sm);
     flex-direction: column;
 
     /* gap: var(--spacing-sm); */

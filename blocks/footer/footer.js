@@ -6,6 +6,12 @@ import { loadFragment } from '../fragment/fragment.js';
  * @param {Element} block The footer block element
  */
 export default async function decorate(block) {
+  const hideFooter = getMetadata('hidefooter');
+  if (hideFooter === 'true') {
+    console.log('we are here');
+    block.remove(); // Or don't render anything
+    return;
+  }
   // load footer as fragment
   const footerMeta = getMetadata('footer');
   const footerPath = footerMeta

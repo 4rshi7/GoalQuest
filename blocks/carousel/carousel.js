@@ -3,7 +3,7 @@ function initializeCarousel() {
   // console.log(buttons);
   buttons.forEach((button) => {
     button.addEventListener('click', () => {
-      console.log(button);
+      // console.log(button);
       const offset = button.dataset.carouselButton === 'next' ? 1 : -1;
       const carousel = button.closest('[data-carousel]');
       const slides = carousel.querySelector('[data-slides]');
@@ -52,13 +52,13 @@ export default async function decorate(block) {
     }
   });
 
-  const btPrev = document.createElement('button');
-  btPrev.append(block.children[1]);
-  block.prepend(btPrev);
+  // const btPrev = document.createElement('button');
+  // btPrev.append(block.children[1]);
+  // block.prepend(btPrev);
 
-  const btNext = document.createElement('button');
-  btNext.append(block.children[1]);
-  block.prepend(btNext);
+  // const btNext = document.createElement('button');
+  // btNext.append(block.children[1]);
+  // block.prepend(btNext);
   // const btNext = document.createElement('button');
   // btNext.append(block.children[0]);
   // block.prepend(btNext);

@@ -44,7 +44,7 @@ function updateWeekProgress(weekId) {
   const id = weekId[weekId.length - 1]; // Get the last character of weekId (e.g., '1' from 'week1')
   const weekCard = document.getElementById(id);
   // console.log(weekCard);
-  const progressPath = weekCard.querySelector('.radial-progress path');
+  const progressPath = weekCard.querySelector('.radial-progress .progress-bar');
   // console.log(progressPath);
   const progressText = weekCard.querySelector('p');
   progressPath.setAttribute('stroke-dasharray', `${progressPercentage}, 100`);
@@ -60,7 +60,6 @@ function updateProgress(weekId, topicId) {
 }
 
 export default function decorate(block) {
-  console.log(block);
   let iter = 1;
   [...block.children].forEach((child) => {
     child.classList.add('modal');

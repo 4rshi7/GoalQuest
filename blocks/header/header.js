@@ -132,8 +132,79 @@ function closeSidebar() {
  * loads and decorates the header, mainly the nav
  * @param {Element} block The header block element
  */
+
+function toggleTheme() {
+  const html = document.documentElement;
+
+  const currentTheme = html.getAttribute('data-theme');
+  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+  if (currentTheme === 'dark') {
+    html.removeAttribute('data-theme');
+  } else {
+    html.setAttribute('data-theme', 'dark');
+  }
+
+  // Save theme preference
+  localStorage.setItem('theme', newTheme);
+}
+
+function initializeTheme() {
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+}
+
+function toggleMarkup() {
+  const navUl = document.querySelector('.nav-sections ul');
+  const isSignedwrapper = navUl.querySelector('li:nth-of-type(5)');
+  const signin = isSignedwrapper.querySelector('em:nth-of-type(1)');
+  const signout = isSignedwrapper.querySelector('em:nth-of-type(2)');
+  const session = localStorage.getItem('isSignedIn');
+
+  if (session === 'true') {
+    signin.style.display = 'none';
+    signout.style.display = 'block';
+  } else {
+    signin.style.display = 'block';
+    signout.style.display = 'none';
+  }
+}
+function toggleSession() {
+  const session = localStorage.getItem('isSignedIn');
+  if (session === 'true') {
+    const weekTopics = JSON.parse(localStorage.getItem('weekTopics'));
+    ['week1', 'week2', 'week3', 'week4', 'week5'].forEach((week) => {
+      weekTopics[week].forEach((task) => {
+      // console.log(task);
+      // console.log(task.completed);
+        task.completed = false;
+        console.log(task.completed);
+      });
+    });
+    localStorage.setItem('weekTopics', JSON.stringify(weekTopics));
+    localStorage.setItem('isSignedIn', 'false');
+    const html = document.documentElement;
+    html.removeAttribute('data-theme');
+    localStorage.setItem('theme', 'light');
+    window.location.href = '/';
+    toggleMarkup();
+  } else {
+    localStorage.setItem('isSignedIn', 'true');
+    toggleMarkup();
+  }
+}
+
 export default async function decorate(block) {
   // load nav as fragment
+  const hideHeader = getMetadata('hideheader');
+  //  console.log(hideHeader);
+  if (hideHeader === 'true') {
+    console.log('we are here');
+    block.remove(); // Or don't render anything
+    return;
+  }
   const navMeta = getMetadata('nav');
   const navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
   // navPathnavMetanewURL.pathname;
@@ -207,4 +278,32 @@ export default async function decorate(block) {
     closeSidebar();
   });
   // console.log(hamburg);
+
+  const navUl = block.querySelector('.nav-sections ul');
+  const themeToggle = navUl.querySelector('li:last-of-type');
+  themeToggle.style.cursor = 'pointer';
+  themeToggle.addEventListener('click', () => {
+    toggleTheme();
+  });
+
+  const isSignedwrapper = navUl.querySelector('li:nth-of-type(5)');
+  const session = localStorage.getItem('isSignedIn');
+  const signin = isSignedwrapper.querySelector('em:nth-of-type(1)');
+  const signout = isSignedwrapper.querySelector('em:nth-of-type(2)');
+  if (session === 'true') {
+    signin.style.display = 'none';
+  } else {
+    signout.style.display = 'none';
+  }
+  signin.addEventListener('click', () => {
+    console.log('you were here');
+    console.log('signed in');
+    window.location.href = '/signin';
+    toggleSession();
+  });
+  signout.addEventListener('click', () => {
+    console.log('signed out');
+    toggleSession();
+  });
+  initializeTheme();
 }

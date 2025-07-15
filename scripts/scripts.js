@@ -105,6 +105,17 @@ async function loadEager(doc) {
   } catch (e) {
     // do nothing
   }
+
+  const sign = localStorage.getItem('isSignedIn');
+  const location = window.location.href;
+  const index = location.lastIndexOf('/');
+  const reLocation = location.slice(index + 1);
+  if (reLocation !== 'signin' && reLocation !== 'signup' && reLocation !== '' && sign === 'false') {
+    window.location.href = '/signin';
+  }
+  // if(sign==="false" && ){
+  //   window.location.href='/signin';
+  // }
 }
 
 /**

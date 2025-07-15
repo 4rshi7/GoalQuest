@@ -66,3 +66,26 @@
             font-weight: 600;
             color: var(--accent-1);
         }
+
+
+
+.radial-progress .progress-bg {
+  stroke: #e0e0e0;
+}
+
+.radial-progress .progress-bar {
+  stroke: var(--accent-1);
+}
+
+
+   
+   
+   
+        /* .radial-progress .progress-bg {
+    stroke: var(--secondary);
+}
+
+.radial-progress .progress-bar {
+  stroke: var(--accent-1); 
+  transition: stroke-dasharray 0.3s ease;
+} */

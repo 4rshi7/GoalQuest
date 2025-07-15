@@ -190,7 +190,7 @@ export default function decorate(block) {
     // console.log(week);
     // week.childern[1].classList.add('progress-info');
     const svg = document.createElement('div');
-    svg.innerHTML = '<svg class="radial-progress" viewBox="0 0 36 36"> <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="2" stroke-dasharray="0, 100"/></svg>';
+    svg.innerHTML = ' <svg class="radial-progress" viewBox="0 0 36 36"><path class="progress-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="2" stroke-dasharray="100, 100"></path><path class="progress-bar" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="2" stroke-dasharray="29, 100" ></path> </svg>';
 
     while (svg.firstChild) {
       week.children[1].prepend(svg.firstChild);
@@ -203,6 +203,5 @@ export default function decorate(block) {
       event.target.classList.remove('show');
     }
   };
-  console.log(weekTopics);
   initializeTopics();
 }
