@@ -27,7 +27,9 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 var(--spacing-sm);
+
 }
+
 
 .nav-sections ul {
     list-style: none;
@@ -55,12 +57,7 @@ nav {
     transition: background-color 0.2s ease;
 }
 
-.nav-sections li:hover {
-    color: var(--accent-1);
-    text-decoration: none;
 
-    /* background-color: var(--secondary); */
-}
 
 
 .nav-sections p {
@@ -111,24 +108,30 @@ nav {
     z-index: 1001;
     flex-direction: column;
     gap: var(--spacing-md);
+
 }
 
 .nav-tools ul {
     list-style: none;
 }
 
-/* .nav-tools li {
+
+
+.nav-tools li {
     color: var(--text-primary);
     text-decoration: none;
     font-size: var(--font-lg);
     padding: var(--spacing-sm);
     border-radius: var(--radius-sm);
     transition: background-color 0.2s ease;
-} */
+}
 
-/* .nav-tools li:hover {
+.nav-tools li:hover {
     background-color: var(--secondary);
-} */
+}
+
+
+
 
 .nav-tools p {
     position: absolute;
@@ -145,6 +148,13 @@ nav {
 .nav-tools p:hover {
     background-color: var(--secondary);
     color: var(--accent-1);
+}
+
+.nav-sections li:hover {
+    color: var(--accent-1);
+    text-decoration: none;
+
+    /* background-color: var(--secondary); */
 }
 
 @media (width <= 768px) {

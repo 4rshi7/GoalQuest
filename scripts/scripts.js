@@ -111,6 +111,7 @@ async function loadEager(doc) {
   const index = location.lastIndexOf('/');
   const reLocation = location.slice(index + 1);
   if (reLocation !== 'signin' && reLocation !== 'signup' && reLocation !== '' && sign === 'false') {
+    console.log('not signed');
     window.location.href = '/signin';
   }
   // if(sign==="false" && ){

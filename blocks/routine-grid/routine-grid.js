@@ -76,9 +76,10 @@ function loadWeekTasks(weekId) {
   afternoonTasksList.innerHTML = '';
 
   // Split tasks between morning and afternoon
-  const midPoint = Math.ceil(pendingTasks.length / 2);
+  let midPoint = Math.ceil(pendingTasks.length / 2);
+  midPoint = Math.min(5, midPoint);
   const morningTasks = pendingTasks.slice(0, midPoint);
-  const afternoonTasks = pendingTasks.slice(midPoint);
+  const afternoonTasks = pendingTasks.slice(midPoint, midPoint * 2);
 
   // Update section headers with task counts
   const morningHeader = document.querySelector('.work-session:first-of-type .routine-header h2');
